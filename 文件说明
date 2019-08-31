@@ -1,0 +1,8 @@
+0_regression_classify：keras / tensorflow 深度学习分类回归对比
+1_handwrite_detection：MNIST手写识别练习
+2_image_detection：CIFAR10图像分类
+3_object_detect：物体检测
+4_semantic_analysis：情感分析
+5_text_classification：文本分类
+6_lenet5_keras：lenet5网络实现
+MNIST_data：MNIST手写识别数据
