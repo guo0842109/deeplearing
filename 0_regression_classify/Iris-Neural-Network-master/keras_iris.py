@@ -23,10 +23,11 @@ X_train,X_test,y_train,y_test=train_test_split(X,y,train_size=0.5,random_state=1
 print("shape")
 print(X_train.shape)
 model=Sequential()
-model.add(Dense(16,input_shape=(4,)))
+model.add(Dense(8,input_shape=(4,)))
 model.add(Activation("sigmoid"))
 model.add(Dense(3))
 model.add(Activation("softmax"))
+# 损失函数用多分类的交叉熵
 model.compile(optimizer="sgd",loss="categorical_crossentropy",metrics=["accuracy"])
 model.fit(X_train,y_train,nb_epoch=100,batch_size=1,verbose=1)
 loss, accuracy = model.evaluate(X_test, y_test, verbose=1)
